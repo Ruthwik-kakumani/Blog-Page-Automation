@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Page - Content Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add your CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="contentHeader">Content Header Placeholder</h1>
+
+        <form id="contentForm">
+            <div class="form-group">
+                <label for="contentHeaderInput">Content Header</label>
+                <input type="text" id="contentHeaderInput" name="contentHeader" required>
+            </div>
+            <div class="form-group">
+                <label for="contentImageUrl">Content Image URL</label>
+                <input type="url" id="contentImageUrl" name="contentImageUrl">
+            </div>
+            <div class="form-group">
+                <label for="contentDescription">Content Description</label>
+                <textarea id="contentDescription" name="contentDescription" rows="5" required></textarea>
+            </div>
+
+            <div id="listPointsContainer">
+                <!-- Container to hold dynamically added list points -->
+            </div>
+
+            <button type="button" id="addListPoints">Add List Points</button>
+            <br><br>
+
+            <button type="submit">Submit Content Details</button>
+        </form>
+        <button id="addAnotherContent">Add Another Content</button>
+        <button id="downloadHTML">Download HTML</button>
+        <div id="response"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Add your script file -->
+</body>
+
+</html>

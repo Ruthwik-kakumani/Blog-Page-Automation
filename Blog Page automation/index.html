@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Submission Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add your CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Submit Your Blog</h1>
+        <form id="blogForm" action="generated.html" method="GET">
+            <div class="form-group">
+                <label for="title">Blog Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">Image URL</label>
+                <input type="url" id="imageUrl" name="imageUrl" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Blog Description</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response"></div>
+    </div>
+</body>
+
+</html>
